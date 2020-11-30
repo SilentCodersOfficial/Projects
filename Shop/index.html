@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styled.css" id="styles">
+    <script src="https://kit.fontawesome.com/3bfdd3ba56.js" crossorigin="anonymous"></script>
+    <script>
+    function changeTheme() {
+        const link = document.getElementById('styles');
+        if (link.href.includes('d')) {
+            link.href = 'style.css';
+        } else {
+            link.href = 'styled.css';
+        }
+    }    
+    </script>
+</head>
+<body>
+    <!-- Header Start  -->
+     <div class="header">
+         <div class="header-social">
+            <a href=""><i class="fab fa-facebook-square fa-customize fa-color"></i></a>
+            <a href=""><i class="fab fa-instagram-square fa-customize fa-color"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-customize fa-color"></i></a>
+            <a href=""><i class="fab fa-whatsapp-square fa-customize fa-color"></i></a>
+        </div>
+        <div class="header-contact">
+            <a href=""><i class="fas fa-envelope fa-customize fa-color"></i></a>
+        </div>
+     </div>
+     <!-- Header End -->
+     <!-- Navbar Start-->
+     <nav>
+        <ul class="links">
+            <a href=""><li>LOREM,<strong>IPSUM.</strong></li></a>
+        </ul>
+        <ul class="cart">
+            <a href=""><li><i class="fas fa-shopping-cart"></i></li></a>
+            <li><label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label></li>
+        </ul>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <div class="menu">
+            <ul class="silent-menu">
+                <a href=""><li><i class="fas fa-home"></i></li></a>
+                <a href=""><li><i class="fas fa-book-open"></i></li></a>
+                <a href=""><li><i class="fas fa-phone"></i></li></a>
+                <a href="#"><li><i class="fas fa-moon" onclick="changeTheme()"></i></li></a>
+            </ul>
+        </div>
+     </nav>
+     <!-- Navbar End-->
+     <!-- Container Start -->
+     <div class="container-pro">
+        <div class="item-list-pro">
+            <div class="product">
+                <div class="image">
+                    <img src="about_us/blank.png" alt="product">
+                </div>
+                <div class="desc">
+                    <h2>LOREM!!!!!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi et asperiores, minima cumque similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed ducimus laboriosam consequuntur facilis quas aspernatur id. Quae, laudantium molestias!</p>
+                    <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestias facilis nemo ea inventore dignissimos. Facilis praesentium quod dicta consectetur magnam, enim quasi, a impedit neque laudantium facere vitae voluptates sunt debitis sapiente optio ea dolorem quam. Deserunt, temporibus repellat.</p>
+                    <br><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta explicabo et corporis reprehenderit quas deserunt iste iusto in quia.</p>
+                    <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, totam!</p>
+                    <input type="text"><input type="button">
+                </div> 
+            </div>
+        </div>
+     </div>
+     <!-- Container End -->
+     <!-- Footer-->
+     <div class="footer">
+        <b>Wszelkie prawa zastrzeżone</b> <i class="far fa-copyright"></i>
+     </div>
+</body>
+</html>
