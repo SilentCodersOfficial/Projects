@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="logo_small.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        html, body{
+            font-family: "Open Sans", Arial, sans-serif;
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: auto;
+        }
+        .header-1{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(246, 248, 249);
+            flex-basis: 100%;
+        }
+        .header-2{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(74, 78, 81);
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .header-3{
+            display: flex;
+            flex-direction: column;
+            height: 41px;
+            background-color: rgb(246, 248, 249);
+            border-bottom: solid #e2e2e2 1px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+        }
+        .banner a{
+            color: rgb(192, 194, 194);
+            text-decoration: none;
+            padding: 10px;
+        }
+        .banner a:hover{
+            color: rgb(73, 147, 197);
+            text-decoration: none;
+        }
+        .banner:hover{
+            background-color: rgb(59, 62, 65);
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .lmain{
+            display: flex;
+            background-color: rgb(246, 248, 249);
+            flex-basis: 15%;
+        }
+        .rmain{
+            display: flex;
+            background-color: rgb(246, 248, 249); 
+            flex-basis: 15%;
+        }
+        .main{
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            flex-basis: 70%;
+            border-left: solid #e2e2e2 1px;
+            border-right: solid #e2e2e2 1px;
+            border-bottom: solid #e2e2e2 1px;
+            text-align: center;
+            display: block;
+        }
+        .footer-1{
+            display: flex;
+            flex-direction: column;
+            height: 18px;
+            background-color: rgb(246, 248, 249);
+            border-bottom: solid #e2e2e2 1px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        .footer-2{
+            display: flex;
+            flex-direction: column;
+        }
+        .info{
+            background-color: rgb(246, 248, 249);
+			text-align: right;
+            line-height: 50px;
+            border-bottom: solid #e2e2e2 1px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        .info a.link{
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 13px;
+            color: rgb(192, 194, 194);
+            padding: 4px;
+        }
+        .social{
+            line-height: 50px;
+            background-color: rgb(246, 248, 249);
+            padding-top: 25px;
+            padding-bottom: 20px;
+            display: block;
+            text-align: right;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        .title{
+            display: flex;
+            display: block;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-1">
+            <a href="https://www.beamng.com">
+                <img src="logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-2">
+            <div class="banner">
+                <a href="">Lorem.</a>
+            </div>
+            <div class="banner">
+                <a href="">Lorem.</a>
+            </div>
+            <div class="banner">
+                <a href="">Lorem.</a>
+            </div>
+            <div class="banner">
+                <a href="">Lorem.</a>
+            </div>
+            <div class="banner">
+                <a href="">Lorem.</a>
+            </div>
+        </div>
+        <div class="header-3">
+        </div>
+    </div>
+    <div class="container">
+        <div class="lmain"></div>
+        <div class="main">
+            <div class="advert" style="display: flex; justify-content: center;">
+                <video width="100%" height="auto" controls>
+                    <source src="advert.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="title">
+                <table>
+                    <tr>
+                        <td rowspan="2"><img src="Logo/Cherrier.png" alt="cherrier"></td>
+                        <td rowspan="2" style="background-color: #ff6600;"></td>
+                        <td style="font-size: 30px;">Vivace & Tograc</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 20px; color: rgb(154, 152, 152);">La Vie á Toute Vitesse</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="rmain"></div>
+    </div>
+    <div class="footer-1">
+        
+    </div>
+    <div class="footer-2">
+        <div class="info">
+            <a href="https://www.beamng.com" class="link">Home</a>
+			<a href="https://www.beamng.gmbh" class="link">Company</a>
+			<a href="https://www.beamng.gmbh/about-us" class="link">About us</a>
+			<a href="https://www.support.beamng.com" class="link">Contact Us</a>
+			<a href="https://www.beamng.com/help" class="link">Help</a>
+			<a href="https://www.wiki.beamng.com/TOS" class="link">Terms and Rules</a>
+			<a href="https://www.wiki.beamng.com/Privacy_Policy" class="link">Privacy Policy</a>
+			<a href="https://www.beamng.com/imprint" class="link">Impressum</a>
+        </div>
+        <div class="social">
+            <a href="https://www.discord.gg/YKcSWAy" style="padding-right: 4px;"><img src="Social/discord.png"></a>
+			<a href="https://www.facebook.com/BeamNGPhysics" style="padding-right: 4px;"><img src="Social/facebook.png"></a>
+			<a href="https://www.twitter.com/beamng" style="padding-right: 4px;"><img src="Social/twitter.png"></a>
+			<a href="https://www.youtube.com/user/beamng" style="padding-right: 4px;"><img src="Social/youtube.png"></a>
+			<a href="https://www.instagram.com/beamng.official/" style="padding-right: 4px;"><img src="Social/instagram.png"></a>
+			<a href="https://store.steampowered.com/app/284160" style="padding-right: 4px;"><img src="Social/steam.png"></a>
+			<a href="https://github.com/BeamNG/" style="padding-right: 4px;"><img src="Social/github.png"></a>
+			<a href="https://www.reddit.com/r/beamng" style="padding-right: 4px;"><img src="Social/reddit.png"></a>
+			<a href="https://support.beamng.com"><img src="Social/email.png"></a>
+        </div>
+    </div>
+</body>
+</html>
